@@ -1,0 +1,142 @@
+{
+  "books": [
+    {
+      "id": "g7-math",
+      "file": "grade7-mathematics-new-curriculum.pdf",
+      "grade": 7,
+      "subject": "Mathematics",
+      "title": "Mathematics Student Textbook, Grade 7",
+      "edition": "New curriculum, Addis Ababa City Administration Education Bureau",
+      "page_offset": 6,
+      "units": [
+        {
+          "number": 1,
+          "title": "Basic Concepts of Sets",
+          "start_page": 1,
+          "sections": [
+            { "number": "1.1", "title": "Introduction to sets", "start_page": 1 },
+            { "number": "1.2", "title": "Relations among sets", "start_page": 4 },
+            { "number": "1.3", "title": "Operations on sets", "start_page": 8 },
+            { "number": "S1", "title": "Summary and review exercise", "start_page": 10 }
+          ]
+        },
+        {
+          "number": 2,
+          "title": "Integers",
+          "start_page": 11,
+          "sections": [
+            { "number": "2.1", "title": "Revision on whole and natural numbers", "start_page": 11 },
+            { "number": "2.2", "title": "Introduction to integers", "start_page": 14 },
+            { "number": "2.3", "title": "Comparing and ordering integers", "start_page": 20 },
+            { "number": "2.4", "title": "Addition and subtraction of integers", "start_page": 27 },
+            { "number": "2.5", "title": "Multiplication and division of integers", "start_page": 35 },
+            { "number": "2.6", "title": "Even and odd integers", "start_page": 47 },
+            { "number": "S2", "title": "Summary and review exercise", "start_page": 53 }
+          ]
+        },
+        {
+          "number": 3,
+          "title": "Linear Equations",
+          "start_page": 57,
+          "sections": [
+            { "number": "3.1", "title": "Algebraic terms and expressions", "start_page": 57 },
+            { "number": "3.2", "title": "Solving linear equations", "start_page": 65 },
+            { "number": "3.3", "title": "Cartesian coordinate system", "start_page": 78 },
+            { "number": "3.4", "title": "Applications", "start_page": 93 },
+            { "number": "S3", "title": "Summary and review exercise", "start_page": 99 }
+          ]
+        },
+        {
+          "number": 4,
+          "title": "Ratio, Proportion and Percentage",
+          "start_page": 103,
+          "sections": [
+            { "number": "4.1", "title": "Ratio and proportion", "start_page": 103 },
+            { "number": "4.2", "title": "Revision on percentages", "start_page": 119 },
+            { "number": "4.3", "title": "Application of ratio, proportion and percentage", "start_page": 131 },
+            { "number": "S4", "title": "Summary and review exercise", "start_page": 149 }
+          ]
+        },
+        {
+          "number": 5,
+          "title": "Perimeter and Area of Plane Figures",
+          "start_page": 154,
+          "sections": [
+            { "number": "5.1", "title": "Revision of triangles", "start_page": 154 },
+            { "number": "5.2", "title": "Four-sided figures", "start_page": 159 },
+            { "number": "5.3", "title": "Perimeters and areas of triangles", "start_page": 170 },
+            { "number": "5.4", "title": "Perimeter and area of four-sided figures", "start_page": 177 },
+            { "number": "5.5", "title": "Circumference and area of a circle", "start_page": 185 },
+            { "number": "5.6", "title": "Applications", "start_page": 189 }
+          ]
+        },
+        {
+          "number": 6,
+          "title": "Congruency of Plane Figures",
+          "start_page": 196,
+          "sections": [
+            { "number": "6.1", "title": "Congruent plane figures", "start_page": 196 },
+            { "number": "6.2", "title": "Applications", "start_page": 211 },
+            { "number": "S6", "title": "Summary and review exercise", "start_page": 215 }
+          ]
+        },
+        {
+          "number": 7,
+          "title": "Data Handling",
+          "start_page": 218,
+          "sections": [
+            { "number": "7.1", "title": "Organization of data using frequency tables", "start_page": 218 },
+            { "number": "7.2", "title": "Line graphs and pie charts", "start_page": 222 },
+            { "number": "7.3", "title": "The mean, mode, median and range of data", "start_page": 233 },
+            { "number": "7.4", "title": "Application", "start_page": 239 },
+            { "number": "S7", "title": "Summary and review exercise", "start_page": 243 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g8-math",
+      "file": "camara-MathSBG8.pdf",
+      "grade": 8,
+      "subject": "Mathematics",
+      "title": "Mathematics Student Textbook, Grade 8",
+      "edition": "Ministry of Education (GEQIP edition); this copy contains units 1-3",
+      "page_offset": 4,
+      "units": [
+        {
+          "number": 1,
+          "title": "Squares, Square Roots, Cubes and Cube Roots",
+          "start_page": 1,
+          "sections": [
+            { "number": "1.1", "title": "The square of a number", "start_page": 1 },
+            { "number": "1.2", "title": "The square root of a rational number", "start_page": 12 },
+            { "number": "1.3", "title": "Cubes and cube roots", "start_page": 22 },
+            { "number": "S1", "title": "Summary and miscellaneous exercise", "start_page": 33 }
+          ]
+        },
+        {
+          "number": 2,
+          "title": "Further on Working with Variables",
+          "start_page": 37,
+          "sections": [
+            { "number": "2.1", "title": "Further on algebraic terms and expressions", "start_page": 37 },
+            { "number": "2.2", "title": "Multiplication of binomials", "start_page": 49 },
+            { "number": "2.3", "title": "Highest common factors", "start_page": 56 },
+            { "number": "S2", "title": "Summary and miscellaneous exercise", "start_page": 63 }
+          ]
+        },
+        {
+          "number": 3,
+          "title": "Linear Equations and Inequalities",
+          "start_page": 67,
+          "sections": [
+            { "number": "3.1", "title": "Further on solutions of linear equations", "start_page": 67 },
+            { "number": "3.2", "title": "Further on linear inequalities", "start_page": 81 },
+            { "number": "3.3", "title": "Cartesian coordinate system", "start_page": 84 },
+            { "number": "S3", "title": "Summary and miscellaneous exercise", "start_page": 96 }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+# Textbook PDFs are copyrighted: keep them out of the public repo (see README).
+textbooks/*
+!textbooks/README.md
+
+# Generated data: page text cache, search index, summaries, database, logs.
+data/
+
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Downloaded AI models (translation)
+models/

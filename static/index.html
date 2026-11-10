@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Study Assistant</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo" aria-hidden="true">∑</span>
+      <div>
+        <strong data-i18n="appName">Study Assistant</strong>
+        <small data-i18n="tagline">Mathematics · works offline</small>
+      </div>
+    </div>
+    <div class="controls">
+      <label class="field">
+        <span data-i18n="unit">Unit</span>
+        <select id="unitSelect" aria-label="Unit"></select>
+      </label>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="en" class="active">English</button>
+        <button type="button" data-lang="am">አማርኛ</button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="tabs" role="tablist">
+    <button role="tab" data-tab="lessons" class="active" data-i18n="tabLessons">Lessons</button>
+    <button role="tab" data-tab="ask" data-i18n="tabAsk">Ask</button>
+    <button role="tab" data-tab="quiz" data-i18n="tabQuiz">Quiz</button>
+    <button role="tab" data-tab="teacher" data-i18n="tabTeacher">Teacher</button>
+  </nav>
+
+  <main>
+    <!-- Lessons: browse sections and see the visual unit summary -->
+    <section id="tab-lessons" class="panel active">
+      <div class="lessons-layout">
+        <aside class="card section-list">
+          <h2 id="unitTitle"></h2>
+          <button id="summaryBtn" class="primary wide" data-i18n="showSummary">Show visual summary</button>
+          <ol id="sectionList"></ol>
+        </aside>
+        <article class="card reader" id="reader">
+          <p class="muted" data-i18n="pickSection">Pick a section to read it, or open the visual summary.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Ask -->
+    <section id="tab-ask" class="panel">
+      <div class="card chat">
+        <div id="messages" class="messages" aria-live="polite">
+          <p class="muted" data-i18n="askHint">Ask anything about this unit. Answers come only from your textbook.</p>
+        </div>
+        <form id="askForm" class="ask-form">
+          <input id="question" autocomplete="off" maxlength="500" required data-i18n-placeholder="askPlaceholder" placeholder="e.g. What is a proper subset?">
+          <button class="primary" type="submit" data-i18n="send">Ask</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Quiz -->
+    <section id="tab-quiz" class="panel">
+      <div class="card">
+        <div class="row">
+          <h2 data-i18n="quizTitle">Practice quiz</h2>
+          <button id="newQuizBtn" class="primary" data-i18n="newQuiz">New quiz (5 questions)</button>
+        </div>
+        <div id="quiz"></div>
+      </div>
+    </section>
+
+    <!-- Teacher -->
+    <section id="tab-teacher" class="panel">
+      <div class="card">
+        <div class="row">
+          <h2 data-i18n="teacherTitle">Teacher view</h2>
+          <form id="pinForm" class="pin hidden">
+            <input id="pin" type="password" inputmode="numeric" data-i18n-placeholder="pin" placeholder="Teacher PIN">
+            <button class="primary" type="submit">OK</button>
+          </form>
+        </div>
+        <p class="muted" data-i18n="teacherHint">Choose which units students can see, and find where they struggle.</p>
+        <div id="teacher"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="status" id="status"></footer>
+
+  <script src="/static/vendor/mermaid.min.js"></script>
+  <script src="/static/app.js"></script>
+</body>
+</html>
