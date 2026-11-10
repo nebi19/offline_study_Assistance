@@ -165,16 +165,30 @@ lab PC will be slower.
 
 | Feature | Time |
 | --- | --- |
-| Answer: first words | 6–11 s |
+| Answer: first words | 10–19 s (about 5 s when the same passages were just used) |
 | "Not in your textbook" reply | under 1 s (the model is not called) |
-| Quiz (5 questions, written and checked) | 1–3 min |
-| Unit summary | SUMMARY_TIME the first time, then instant (cached on disk) |
+| Quiz in English (written and checked) | 2–3 min, 4–5 questions |
+| Quiz in Amharic | about 6 min, 3 questions, poor quality (see Known limits) |
+| Unit summary | 1–5 min when it works; not reliable yet (see Known limits) |
+
+Most of the wait for an answer is the model reading the retrieved passages,
+not writing. The target of first words within 10 seconds is not met yet.
 
 The model is kept in memory between questions and loaded when the server
 starts, so the first student does not wait for it.
 
 ## Known limits
 
+- **Summaries can fail.** On the latest CPU run the summary for Grade 7
+  Unit 2 ran until the output cap and returned an error after 5 minutes.
+  Earlier runs for Unit 1 worked. The cause is not yet found.
+- **Amharic quizzes are not usable yet.** The Unit 1 quiz came back with 3
+  questions built from multi-part textbook exercises, with confusing options
+  and explanations. Amharic answers and the Amharic interface work.
+- **Quiz questions can still be flawed.** One generated question had two
+  correct options ("which is a perfect square?" with both 441 and 324), and
+  the model usually gives a bare answer instead of a calculation, so most
+  questions are checked by the weaker blind re-answer, not the calculator.
 - **OCR and formulas.** The Grade 7 book is a scan. OCR reads its text well
   but loses the layout of fractions and some symbols, and figures are not
   read at all. Questions about a diagram cannot be answered.
@@ -192,7 +206,7 @@ starts, so the first student does not wait for it.
 
 ```bash
 uv sync
-uv run pytest          # 93 tests; they use a fake model, so no Ollama needed
+uv run pytest          # 95 tests; they use a fake model, so no Ollama needed
 ```
 
 | Path | What it is |
@@ -208,4 +222,5 @@ uv run pytest          # 93 tests; they use a fake model, so no Ollama needed
 | `studyassistant/db.py` | SQLite log for the teacher view |
 | `studyassistant/app.py` | HTTP API |
 | `static/` | The web page (no build step) |
+# offline_study_Assistance
 # offline_study_Assistance
